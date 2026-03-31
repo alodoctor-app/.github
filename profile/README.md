@@ -1,43 +1,91 @@
 # 🏥 Alô Doctor
 
-O **Alô Doctor** é uma aplicação web desenvolvida para revolucionar a comunicação entre pacientes e profissionais de saúde em ambientes hospitalares, promovendo maior eficiência, agilidade e qualidade no atendimento clínico.
+> **Ecossistema tecnológico para gestão de saúde e modernização do atendimento médico.**
 
-## 🚀 Acesse a Aplicação (Live Demo)
-
-O sistema já está em produção e você pode testá-lo agora mesmo.
-
-🔗 **Link da Aplicação:** [https://alodoc.vercel.app](https://alodoc.vercel.app)
-
-### 🔐 Credenciais de Teste
-
-Para explorar as diferentes visões do sistema, utilize os acessos abaixo:
-
-**Acesso Visão Paciente:**
-* **E-mail:** `teste@alodoctor.com.br`
-* **Senha:** `alodoctorpaciente`
-
-**Acesso Visão Hospital (Profissional/Admin):**
-* **Usuário:** `adm`
-* **Senha:** `alodoctoradm`
-
-## 📚 Documentação da API
-
-Toda a estrutura de endpoints, regras de requisição, schemas e métodos de autenticação da nossa API está documentada e disponível para consulta pública.
-
-🔗 **Acesse a Documentação (Apidog):** [https://api-alodoctor.apidog.io](https://api-alodoctor.apidog.io)
+O **Alô Doctor** é uma solução completa desenvolvida para transformar a comunicação entre pacientes e profissionais de saúde. O foco é eliminar gargalos em ambientes hospitalares, trazendo agilidade aos chamados clínicos e oferecendo aos gestores dados precisos sobre a qualidade do atendimento em tempo real.
 
 ---
 
-## ✨ Principais Funcionalidades
+## 🚀 Links Úteis
 
-* **Sistema de Chamados:** A principal funcionalidade da plataforma. Permite a criação de chamados em tempo real pelo paciente, que são exibidos em um painel interativo para acompanhamento imediato pelos profissionais de saúde.
-* **Controle de Leitos e Internação:** Mapeamento em tempo real identificando em qual leito cada paciente está alocado.
-* **Controle de Acesso Inteligente:** Implementação de segurança baseada em tokens. O paciente só tem acesso ao sistema de chamados se estiver ativamente associado a um leito hospitalar.
-* **Pesquisa de Satisfação:** Coleta de feedback automatizada realizada após a conclusão do atendimento para métricas de qualidade hospitalar.
+* 🔗 **Live Demo:** [alodoc.vercel.app](https://alodoc.vercel.app)
+* 📚 **Documentação da API (Apidog):** [api-alodoctor.apidog.io](https://api-alodoctor.apidog.io)
+
+---
+
+## ✨ Funcionalidades Principais
+
+* **🛎️ Sistema de Chamados em Tempo Real:** Pacientes podem solicitar assistência imediata através da interface web, com atualização instantânea para a enfermagem.
+* **📊 Dashboard de Monitorização:** Painel interativo para profissionais de saúde gerirem chamados ativos e prioridades.
+* **🛏️ Gestão de Leitos:** Controlo em tempo real da ocupação hospitalar, associando pacientes a leitos específicos de forma dinâmica.
+* **🔐 Segurança e Acesso:** Autenticação baseada em tokens (JWT). O acesso é validado para garantir que apenas pacientes com internação ativa utilizem o sistema.
+* **⭐ Pesquisa de Satisfação:** Coleta automatizada de feedback após cada atendimento para gerar métricas de performance (NPS).
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+O ecossistema utiliza uma stack moderna focada em performance, tipagem forte e escalabilidade:
+
+* **Frontend:** [React.js](https://reactjs.org/) / [Next.js](https://nextjs.org/) com **TypeScript**.
+* **Backend:** [Node.js](https://nodejs.org/) com **TypeScript**.
+* **Estilização:** [Tailwind CSS](https://tailwindcss.com/) para uma interface responsiva e moderna.
+* **Arquitetura:** Princípios de **Clean Architecture** e **SOLID** para garantir fácil manutenção.
+* **Deploy/Hospedagem:** Vercel e serviços Cloud.
+
+---
 
 ## 🏗️ Estrutura do Projeto
 
-O ecossistema é dividido em dois repositórios focados na separação de responsabilidades (Clean Architecture):
+O ecossistema está dividido em dois repositórios focados na separação de responsabilidades:
 
-* 💻 **[Web Interface (Frontend)](https://github.com/alodoctor-app/web-alodoctor):** Interface intuitiva e responsiva desenvolvida em TypeScript.
-* ⚙️ **[API REST (Backend)](https://github.com/alodoctor-app/api-alodoctor):** Motor de regras de negócio, autenticação e persistência de dados.
+1.  **[API Alô Doctor](https://github.com/alodoctor-app/api-alodoctor):** O motor do sistema. Gere regras de negócio, persistência de dados e autenticação.
+2.  **[Web Alô Doctor](https://github.com/alodoctor-app/web-alodoctor):** A interface do utilizador, com fluxos distintos para Pacientes e Administradores Hospitalares.
+
+---
+
+## 🚀 Como Executar Localmente
+
+### Pré-requisitos
+* Node.js (v18+)
+* NPM ou Yarn
+
+### Instalação
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/alodoctor-app/web-alodoctor.git
+    ```
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+3.  **Configuração:**
+    Crie um arquivo `.env` na raiz com base no `.env.example` fornecido nos repositórios.
+4.  **Inicie o ambiente de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+---
+
+## 🔐 Credenciais de Teste (Demo)
+
+Podes explorar as diferentes visões do sistema utilizando as credenciais abaixo:
+
+| Perfil | Usuário/E-mail | Senha |
+| :--- | :--- | :--- |
+| **Paciente** | `teste@alodoctor.com.br` | `alodoctorpaciente` |
+| **Hospital/Admin** | `adm` | `alodoctoradm` |
+
+---
+
+## 📩 Contato
+
+Desenvolvido por **Victor Hugo Gutierrez**.
+
+* **LinkedIn:** [linkedin.com/in/victorhugogutierrez](https://www.linkedin.com/in/victorhugogutierrez)
+* **E-mail:** [hugovictorgutierrez@gmail.com](mailto:hugovictorgutierrez@gmail.com)
+
+---
+*Este projeto foi idealizado para modernizar fluxos de atendimento em instituições de saúde.*
